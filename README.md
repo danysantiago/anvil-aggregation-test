@@ -13,3 +13,6 @@ The test `MultibindingAggregationTest` is trying to validate that multibinding c
 are aggregated at the component even if they come from a 2nd level transitive dependency. However,
 since `libraryTwo` is not in the compile classpath of `app` the hints created by Anvil are lost
 and the module ends up being missing from the component.
+
+Note that this `main` branch validate the KSP version of Anvil (`dev.zacsweers.anvil`) while the
+branch `kapt-anvil` validates the KAPT version (`com.squareup.anvil`).
