@@ -6,9 +6,8 @@ junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 appcompat = "1.6.1"
 material = "1.10.0"
-anvil = "0.3.1"
+anvil = "2.4.9"
 jetbrainsKotlinJvm = "1.9.24"
-ksp = "1.9.24-1.0.20"
 dagger = "2.51.1"
 
 [libraries]
@@ -24,7 +23,7 @@ kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", vers
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-anvil= { id = "dev.zacsweers.anvil", version.ref = "anvil" }
+anvil= { id = "com.squareup.anvil", version.ref = "anvil" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 

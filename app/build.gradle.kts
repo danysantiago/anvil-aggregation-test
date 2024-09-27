@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.anvil)
 }
 
@@ -38,14 +38,14 @@ android {
 }
 
 anvil {
-    useKsp(true, true)
+
 }
 
 dependencies {
     implementation(project(":appScope"))
     implementation(project(":libraryOne"))
     implementation(libs.dagger.runtime)
-    ksp(libs.dagger.compiler)
+    kapt(libs.dagger.compiler)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
